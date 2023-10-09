@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f2f2f2; /* Added a background color for better contrast */
         }
 
         /* Header styles */
@@ -24,14 +23,14 @@
 
         /* Services section styles */
         .services {
-            padding: 20px; /* Reduced padding for mobile */
+            padding: 40px;
         }
 
         /* Service box styles */
         .service {
             border: 1px solid #ccc;
             padding: 20px;
-            margin: 10px; /* Reduced margin for mobile */
+            margin: 20px;
             background-color: #f9f9f9;
             transition: transform 0.2s, box-shadow 0.2s;
             text-align: center;
@@ -49,39 +48,30 @@
             font-weight: bold;
         }
 
-        .service a:hover {
-            color: #e00c0c;
-        }
-
         /* Additional styles for headings and animations */
         h1 {
-            font-size: 24px; /* Reduced font size for mobile */
+            font-size: 36px;
             transition: color 0.2s;
             cursor: pointer;
         }
 
+     
         h2 {
-            font-size: 20px; /* Reduced font size for mobile */
+            font-size: 24px;
         }
 
         h3 {
-            font-size: 16px; /* Reduced font size for mobile */
+            font-size: 18px;
         }
 
         /* Custom font family */
-        h2, h3, p {
+    h2, h3, p {
             font-family: 'Roboto', sans-serif;
         }
 
-        /* Media query for mobile */
-        @media screen and (max-width: 768px) {
-            .service {
-                width: 100%; /* Full width for mobile */
-            }
-
-            h1 {
-                font-size: 20px; /* Further reduced font size for smaller screens */
-            }
+        .service a:hover
+        {
+            color: #e00c0c;
         }
     </style>
 </head>
