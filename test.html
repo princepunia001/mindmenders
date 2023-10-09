@@ -17,13 +17,13 @@
             align-items: center;
             min-height: 100vh;
         }
-
-        /* Add a little padding to the header */
+*{
+    scroll-behavior: smooth;
+}
         header {
             text-align: center;
             margin-top: 20px;
             color: #fff;
-            padding: 20px;
         }
 
         h1 {
@@ -81,28 +81,11 @@
             display: none;
         }
 
-        /* Add responsive styles */
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 24px;
-            }
 
-            p {
-                font-size: 16px;
-            }
-
-            form {
-                padding: 10px;
-            }
-
-            label, input[type="radio"] {
-                font-size: 16px;
-            }
-
-            button {
-                padding: 8px 16px;
-            }
-        }
+input[type="radio"]:hover
+{
+    cursor: pointer;
+}
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
@@ -131,6 +114,7 @@
                 status = 'You appear to be in good mental health.';
             } else if (totalScore <= 10) {
                 status = 'You may be experiencing some stress or mild mental health challenges.';
+               
             } else {
                 status = 'You may be experiencing significant mental health challenges. Please seek professional help.';
             }
@@ -140,20 +124,102 @@
             document.getElementById('assessmentResult').style.display = 'block';
         }
     </script>
+    
 </head>
 <body>
     <header>
+
         <h1><i class="fas fa-brain"></i> Mental Health Self-Assessment <i class="fas fa-brain"></i></h1>
         <p>Answer the following questions to assess your mental health:</p>
+      
     </header>
     <form>
-        <!-- Your questions here -->
+        <p style="font-size: 18px; font-weight: bold;">1. Do you often feel overwhelmed or anxious?</p>
+        <label><input type="radio" name="question1" value="1" required> Yes</label>
+        <label><input type="radio" name="question1" value="0" required> No</label>
+        <label><input type="radio" name="question1" value="1" required> Sometimes</label>
+
+
+        
+
+        <p style="font-size: 18px; font-weight: bold;">2.Have you noticed a significant change in your sleep patterns (e.g., trouble falling asleep, staying asleep, or oversleeping)?</p>
+        <label><input type="radio" name="question2" value="1" required> Yes</label>
+        <label><input type="radio" name="question2" value="0" required> No</label>
+        <label><input type="radio" name="question2" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">3.Are you frequently irritable or easily agitated?</p>
+        <label><input type="radio" name="question3" value="1" required> Yes</label>
+        <label><input type="radio" name="question3" value="0" required> No</label>
+        <label><input type="radio" name="question3" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">4.Have you lost interest in activities you once enjoyed?</p>
+        <label><input type="radio" name="question4" value="1" required> Yes</label>
+        <label><input type="radio" name="question4" value="0" required> No</label>
+        <label><input type="radio" name="question4" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">5. Do you have trouble concentrating or making decisions?</p>
+        <label><input type="radio" name="question5" value="1" required> Yes</label>
+        <label><input type="radio" name="question5" value="0" required> No</label>
+        <label><input type="radio" name="question5" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">6.Have you experienced a significant change in your appetite or weight (e.g., eating more or less than usual)?</p>
+        <label><input type="radio" name="question6" value="1" required> Yes</label>
+        <label><input type="radio" name="question6" value="0" required> No</label>
+        <label><input type="radio" name="question6" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">7.Do you feel persistently sad or down, even when there's no apparent reason?</p>
+        <label><input type="radio" name="question7" value="1" required> Yes</label>
+        <label><input type="radio" name="question7" value="0" required> No</label> 
+        <label><input type="radio" name="question7" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">8.Have you had thoughts of harming yourself or ending your life?</p>
+        <label><input type="radio" name="question8" value="1" required> Yes</label>
+        <label><input type="radio" name="question8" value="0" required> No</label>
+        <label><input type="radio" name="question8" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">9.Are you experiencing unexplained physical symptoms (e.g., headaches, stomachaches) that don't have a clear medical cause?</p>
+        <label><input type="radio" name="question9" value="1" required> Yes</label>
+        <label><input type="radio" name="question9" value="0" required> No</label>
+        <label><input type="radio" name="question9" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">10.Do you avoid social interactions or isolate yourself from others?</p>
+        <label><input type="radio" name="question10" value="1" required> Yes</label>
+        <label><input type="radio" name="question10" value="0" required> No</label>
+        <label><input type="radio" name="question10" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">11.Have you experienced traumatic events or severe stressors recently?</p>
+        <label><input type="radio" name="question11" value="1" required> Yes</label>
+        <label><input type="radio" name="question11" value="0" required> No</label>
+        <label><input type="radio" name="question11" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">12.Do you engage in harmful behaviors, such as substance abuse or self-harm?</p>
+        <label><input type="radio" name="question12" value="1" required> Yes</label>
+        <label><input type="radio" name="question12" value="0" required> No</label>
+        <label><input type="radio" name="question12" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">13.Are you constantly worried about the future or things that might happen?</p>
+        <label><input type="radio" name="question13" value="1" required> Yes</label>
+        <label><input type="radio" name="question13" value="0" required> No</label>
+         <label><input type="radio" name="question13" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">14.Do you have difficulty managing your anger or controlling your temper?</p>
+        <label><input type="radio" name="question14" value="1" required> Yes</label>
+        <label><input type="radio" name="question14" value="0" required> No</label>
+        <label><input type="radio" name="question14" value="1" required> Sometimes</label>
+        
+        <p style="font-size: 18px; font-weight: bold;">15.Have you noticed changes in your energy levels (e.g., feeling excessively tired or agitated)?</p>
+        <label><input type="radio" name="question15" value="1" required> Yes</label>
+        <label><input type="radio" name="question15" value="0" required> No</label> 
+        <label><input type="radio" name="question15" value="1" required> Sometimes</label>
+        
+        <!-- Add more questions here -->
 
         <button type="button" onclick="assessMentalHealth()">Assess</button>
         <button type="reset">Reset</button>
-        <button type="button"><a href="index.html">HOME</a></button>
+       <BUTTON type="button"> <a href="index.html"> HOME</a></BUTTON>
+        
     </form>
 
     <div id="assessmentResult"></div>
 </body>
-</html>
+</html> 
