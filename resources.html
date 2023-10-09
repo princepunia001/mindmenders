@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Self-Identifying Mental Health Resources</title>
-	<style>
-		body {
-			background-color: #f2f2f2;
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		h1 {
-			color: #333;
-			font-size: 36px;
-			margin: 0;
-			padding: 20px;
-			text-align: center;
+    <title>Self-Identifying Mental Health Resources</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
             font-family: monospace;
-		   margin-top: 30px;
-       
+            margin-top: 30px;
         }
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin-top: 50px;
-		}
-		.box {
-			background-color: #fff;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0,0,0,0.2);
-			margin: 20px;
-			padding: 20px;
-			width: calc(25% - 40px);
-            transition-duration: 0.3s; 
-            transition-property: transform, background-color; 
-            transition-timing-function: ease-in-out; 
-            cursor:pointer; 
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
         }
-        .box:hover {
+
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 10px;
+            width: calc(50% - 20px);
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .box:hover, .box:focus-within {
             transform: scale(1.05);
-            background-color:#f2f2f2; 
+            background-color: #f2f2f2;
         }
-        .box:focus-within {
-            background-color:#f2f2f2; 
-        }
+
         a {
-            color:#333; 
-            text-decoration:none; 
+            color: #333;
+            text-decoration: none;
         }
-        a:hover{
-            color:#666; 
+
+        a:hover {
+            color: #666;
         }
-        img{
-            width:auto; 
-            height:auto; 
-            max-width:100%; 
-            max-height:auto; 
-            margin-bottom:.5em; 
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: auto;
+            margin-bottom: 0.5em;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .box {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-    <h1>Self-Identifying Mental Health Resources</h1><hr>
-</header><div class="container">
-        <div class="box">
-            <a href="https://www.nimh.nih.gov/health/find-help/index.shtml"><img src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2017/12/NIMH-Logo-600x399-600x419.png" alt="NIMH logo"></a>
-            <a href="https://www.nimh.nih.gov/health/find-help/index.shtml">National Institute of Mental Health</a>
-            <p>The National Institute of Mental Health (NIMH) is the lead federal agency for research on mental disorders. NIMH is one of the 27 Institutes and Centers that make up the National Institutes of Health (NIH), the largest biomedical research agency in the world.</p>
-        </div>
-        <div class="box">
-            <a href="https://www.samhsa.gov/find-help/national-helpline"><img src="https://poppot.org/wp-content/uploads/2019/08/SAMHSA-New-Large-Logo-1024x1024.jpg" alt="SAMHSA logo"></a>
-            <a href="https://www.samhsa.gov/find-help/national-helpline">Substance Abuse and Mental Health Services Administration</a>
-            <p>The Substance Abuse and Mental Health Services Administration (SAMHSA) is the agency within the U.S. Department of Health and Human Services that leads public health efforts to advance the behavioral health of the nation. SAMHSA's mission is to reduce the impact of substance abuse and mental illness on America's communities.</p>
-        </div>
-        <div class="box">
-            <a href="https://www.crisistextline.org/"><img src="https://www.benice.org/imager/images/37963/Crisis_87eaa2152403c004ea53c8c12ca7eabf.jpg" alt="Crisis Text Line logo"></a>
-            <a href="https://www.crisistextline.org/">Crisis Text Line</a>
-            <p>Crisis Text Line is a global not-for-profit organization providing free mental health texting service through confidential crisis intervention via SMS message. The organization's services are available 24 hours a day, every day, throughout the US by texting HOME to 741741.</p>
-        </div>
-        <div class="box">
-            <a href="https://www.psychiatry.org/patients-families"><img src="https://www.pinclipart.com/picdir/big/382-3824124_apa-logo-american-psychological-association-american-psychology-association.png" alt="APA logo"></a>
-            <a href="https://www.psychiatry.org/patients-families">American Psychiatric Association</a>
-            <p>The American Psychiatric Association (APA) is an organization of psychiatrists working together to ensure humane care and effective treatment for all persons with mental illness, including substance use disorders. It is the voice</p>
-            </div>
-
-        </body>
-        </html>
+<header>
+    <h1>Self-Identifying Mental Health Resources</h1>
+    <hr>
+</header>
+<div class="container">
+    <div class="box">
+        <a href="https://www.nimh.nih.gov/health/find-help/index.shtml"><img src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2017/12/NIMH-Logo-600x399-600x419.png"
+                                                                            alt="NIMH logo"></a>
+        <a href="https://www.nimh.nih.gov/health/find-help/index.shtml">National Institute of Mental Health</a>
+        <p>The National Institute of Mental Health (NIMH) is the lead federal agency for research on mental disorders. NIMH is one of the 27 Institutes and Centers that make up the National Institutes of Health (NIH), the largest biomedical research agency in the world.</p>
+    </div>
+    <div class="box">
+        <a href="https://www.samhsa.gov/find-help/national-helpline"><img
+                src="https://poppot.org/wp-content/uploads/2019/08/SAMHSA-New-Large-Logo-1024x1024.jpg" alt="SAMHSA logo"></a>
+        <a href="https://www.samhsa.gov/find-help/national-helpline">Substance Abuse and Mental Health Services Administration</a>
+        <p>The Substance Abuse and Mental Health Services Administration (SAMHSA) is the agency within the U.S. Department of Health and Human Services that leads public health efforts to advance the behavioral health of the nation. SAMHSA's mission is to reduce the impact of substance abuse and mental illness on America's communities.</p>
+    </div>
+    <div class="box">
+        <a href="https://www.crisistextline.org/"><img
+                src="https://www.benice.org/imager/images/37963/Crisis_87eaa2152403c004ea53c8c12ca7eabf.jpg"
+                alt="Crisis Text Line logo"></a>
+        <a href="https://www.crisistextline.org/">Crisis Text Line</a>
+        <p>Crisis Text Line is a global not-for-profit organization providing free mental health texting service through confidential crisis intervention via SMS message. The organization's services are available 24 hours a day, every day, throughout the US by texting HOME to 741741.</p>
+    </div>
+    <div class="box">
+        <a href="https://www.psychiatry.org/patients-families"><img
+                src="https://www.pinclipart.com/picdir/big/382-3824124_apa-logo-american-psychological-association-american-psychology-association.png"
+                alt="APA logo"></a>
+        <a href="https://www.psychiatry.org/patients-families">American Psychiatric Association</a>
+        <p>The American Psychiatric Association (APA) is an organization of psychiatrists working together to ensure humane care and effective treatment for all persons with mental illness, including substance use disorders. It is the voice</p>
+    </div>
+</div>
+</body>
+</html>
