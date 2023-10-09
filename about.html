@@ -18,10 +18,12 @@
             align-items: center;
             min-height: 100vh;
         }
-*{
-    scroll-behavior: smooth;
-    cursor: pointer;
-}
+
+        * {
+            scroll-behavior: smooth;
+            cursor: pointer;
+        }
+
         header {
             text-align: center;
             margin-top: 20px;
@@ -38,8 +40,7 @@
 
         .about-section {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column; /* Change to column for mobile */
             width: 90%;
             margin-top: 20px;
             padding: 20px;
@@ -49,7 +50,6 @@
         }
 
         .about-content {
-            flex: 1;
             padding: 20px;
         }
 
@@ -62,7 +62,6 @@
         }
 
         .about-icons {
-            flex: 1;
             text-align: center;
         }
 
@@ -75,6 +74,26 @@
 
         .about-icons i:hover {
             transform: scale(1.1);
+        }
+
+        /* Add a media query for screens smaller than 768px (typical mobile phones) */
+        @media (max-width: 768px) {
+            header {
+                font-size: 24px; /* Adjust header font size for mobile */
+            }
+
+            .about-section {
+                width: 100%; /* Make sections full width for mobile */
+            }
+
+            .about-icons i {
+                font-size: 36px; /* Reduce icon size for mobile */
+            }
+
+            /* Remove the image */
+            #section_2_img {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -123,12 +142,11 @@
         <div class="about-content">
             <h2>Improve mental health.</h2>
             <ol>
-                
-             <li>Seek Professional Help.</li>
-             <li> Practice Self-Care</li>
-             <li> Maintain Social Connections</li>
-             <li>  Engage in Enjoyable Activities</li>
-             <li> Nature and Outdoor Activities</li>
+                <li>Seek Professional Help.</li>
+                <li>Practice Self-Care</li>
+                <li>Maintain Social Connections</li>
+                <li>Engage in Enjoyable Activities</li>
+                <li>Nature and Outdoor Activities</li>
             </ol>
         </div>
         <div class="about-icons">
