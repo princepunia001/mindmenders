@@ -1196,3 +1196,67 @@ padding-left: 20px;
 {
     background: linear-gradient(90deg, rgb(150, 236, 244) 0%, rgb(237, 170, 137) 0%, rgb(133, 78, 153) 100%);
 }
+/* <!-- to make siteresponsive--> */
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Adjust the header font size and padding */
+    header {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    /* Make the logo smaller */
+    .logo1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Adjust the navigation bar for smaller screens */
+    #Nav_son1 {
+        width: 50%;
+    }
+
+    #Nav_son2 {
+        width: 50%;
+    }
+
+    /* Hide the desktop navigation and display the mobile navigation */
+    #bars {
+        display: block;
+    }
+
+    #close {
+        display: none;
+    }
+
+    #menubox {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 9999;
+    }
+
+    /* Make the navigation links in the mobile menu full width */
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Make the section_2_img responsive */
+    #section_2_img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust the footer font size and padding */
+    #footer {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+/* Add more media queries for other screen sizes if needed */
